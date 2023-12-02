@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Document</title>
+<link rel="stylesheet"href="menus.css">
+
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+
+
+</head>
+<body>
+<div id="options">
+<form  class="form">
+    <div id = "menus">
+    <select name="fontFamily" class="input">
+        <option value="Open_Sans">Open_Sans</option>
+        <option value="Dhurjati">Dhurjati</option>
+        <option value="Roboto">Roboto</option>
+        <option value="Smooch_Sans">Smooch_Sans</option>
+    </select>
+    <div>
+    <input type="number"  id="font-size"
+    placeholder="14"
+    min="12"
+    max="24"
+    value="16"
+    name="fontSize">
+ <input type="checkbox" name="isBold" id="bold" class="hidden">
+  <label class="material-symbols-outlined "  for="bold" >
+        format_bold
+   </label>
+   
+   <input type="checkbox" id ="italic" class="hidden" name="isItalic">
+      <label class="material-symbols-outlined " for="italic">
+            format_italic
+       </label>
+       <input type="checkbox" id="underlined" class="hidden" name="isUnderlined">
+          <label  class="material-symbols-outlined " for="format_underlined">
+                format_underlined
+           </label>
+          </div>
+           <div>
+           <input type="radio" id="left" class="hidden" name="textalign" value="left" checked>
+            <label  class="material-symbols-outlined " for="left">
+                    format_align_left
+               </label>
+               <input type="radio" id="right" class="hidden" value="right" name="textalign">
+                <label  class="material-symbols-outlined " for="right">
+                        format_align_right
+                   </label>
+                   <input type="radio" id="center" class="hidden" value="center" name="textalign">
+                    <label  class="material-symbols-outlined " for="center">
+                            format_align_center
+                       </label>
+           </div><div>
+                       <input type="color" id="textColor" class="hidden" value="#000000" name="textColor">
+                        <label  class="material-symbols-outlined " for="color-picker" >
+                                border_color
+                           </label></div>
+                           <div>
+                           <input type="color" id="bgColor"class="hidden" value="#ffffff" name="bgColor">
+                               <label  class="material-symbols-outlined " for="background-color">
+                                   format_color_fill
+                               </label></div>
+                               <span onclick="exportData()" id="export" class="material-symbols-outlined "
+                               >cloud_upload</span>
+    </div>
+
+</form>
+</div>
+                                        <div id="cell-state">
+                                        <div id="active-cell" style="background-color:rgb(132, 84, 84)">null</div>
+                                         <input id ="bottom-section" placeholder="f(x)">
+                                        </div>
+                                        </div>
+                                    
+                                        <div id="root">
+                                        <div id="header">
+                                        <div class="head-cell first"></div>
+                                        </div>
+                                            <div id="body">
+                                              <div id="sno"></div>
+                                              <div id="body-container"></div>
+                                            </div>
+                                        </div>
+   
+
+
+
+<script src = "option.js"></script>
+<script src = "script.js"></script>
+</body>
+</html>

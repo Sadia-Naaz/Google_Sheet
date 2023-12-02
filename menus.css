@@ -1,0 +1,142 @@
+
+@font-face {
+    font-family: Open Sans;
+    src: url(./fonts/Open_Sans/);
+  }
+  @font-face {
+    font-family: Dhurjati;
+    src: url(./fonts/Dhurjati/Dhurjati-Regular.ttf);
+  }
+  @font-face {
+    font-family: Smooch Sans;
+    src: url(./fonts/Smooch_Sans/SmoochSans-VariableFont_wght.ttf);
+  }
+  @font-face {
+    font-family: Roboto;
+    src: url(./fonts/Roboto/Roboto-Black.ttf);
+  }
+  *{
+    margin: 0;
+    font-family: poppins-regular;
+}
+#root {
+    width: 100vw;
+    height: 75vh;
+    overflow: scroll;
+    position: relative;
+}
+#header {
+    width: fit-content;
+    display: flex;
+    position: sticky;
+    top: 0;
+    z-index: 120;
+    background-color: #fff;
+}
+.head-cell:first-child {
+    background-color: yellow;
+    position: sticky;
+    top: 0;
+    left: 0;
+    min-width: 40px !important;
+    padding: 0 .1px ;
+}
+.head-cell {
+    min-width: 200px;
+    height: 20px;
+    border: 0.1px solid #C4C7C5;
+    border-top-width: 2px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#body{
+    display: grid;
+    grid-template-columns: 42px auto;
+}
+#sno{
+    position: sticky;
+    left: 0;
+    z-index: 100;
+    background-color: #fff;
+}
+.sno-cell {
+    min-width: 30px;
+    height: 25px;
+    font-size: 14px;
+    border: .1px solid gray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.row {
+    display: flex;
+}
+.cell {
+    border: 0.1px solid #212321;
+    min-width: 200px;
+    height: 25px ;
+}
+
+.cell:focus {
+    outline: 2px solid #1B72E8;
+}
+
+#export{ 
+    cursor: pointer;
+    font-size: 32px !important;
+}
+.form {
+  display: flex;
+  padding: 30px;
+  justify-content: center;
+  gap: 20px;
+  align-items: center;
+}
+
+input:checked + label {
+  background-color: #EDF2FA;
+}
+.input {
+  padding: 5px;
+  min-width: 100px;
+}
+.input:focus{
+  outline: none;
+}
+input[type="color"]{
+  width: 0;
+  height: 0;
+  visibility: hidden;
+}
+input[type="checkbox"], input[type="radio"]  {
+  display: none;
+}
+
+input[type="checkbox"] + label, input[type="radio"] + label {
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+
+#cell-state{
+  display: flex;
+  gap: 20px;
+  padding: 10px 100px;
+  align-items: center;
+}
+#cell-state div {
+  background-color: #EDF2FA;
+  padding: 11px;
+  border-radius: 4px;
+}
+#cell-state input {
+  flex-grow: 1;
+  padding: 10px;
+}
+#cell-state input:focus {
+  outline: none;
+}
